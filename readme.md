@@ -1,1 +1,1 @@
-This is a 3d developer portfolio of mine!
+This is a portfolio of mine!
