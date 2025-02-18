@@ -36,7 +36,7 @@ const Contact = () => {
         from_name:form.name,
         to_name:'Satyam',
         from_email: form.email,
-        to_email: 'skushwaha.iitr@gmail.com',
+        to_email: 'nullnftworld@gmail.com',
         message:form.message,
       },
       userId
