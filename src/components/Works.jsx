@@ -1,6 +1,7 @@
 import { Tilt } from "react-tilt"
 import { motion } from "framer-motion"
 import { github } from "../assets"
+import PropTypes from 'prop-types';
 import { SectionWrapper } from "../hoc"
 import { styles } from "../styles"
 import { projects } from "../costants"
@@ -22,10 +23,8 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link})
           />
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
             <div 
-              onClick={() => window.open
-              (source_code_link,"_blank")}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-              
+              onClick={() => window.open(source_code_link,"_blank")}
+              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"     
             >
               <img src={github}
                alt='github'
@@ -51,6 +50,17 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link})
     </motion.div>
   )
 }
+ProjectCard.propTypes = {
+  index: PropTypes.number.isRequired,
+  name: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  tags: PropTypes.arrayOf(PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    color: PropTypes.string.isRequired,
+  })).isRequired,
+  image: PropTypes.string.isRequired,
+  source_code_link: PropTypes.string.isRequired,
+};
 
 const Works = () => {
   return (
@@ -64,7 +74,7 @@ const Works = () => {
 
         <div>
           <motion.p className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]">
-          Through my academic journey, I applied a strong focus on building my programming and data analysis abilities.
+          Through my academic journey, I applied a strong focus on building my programming and development abilities.
           I am detail-oriented and meticulous when managing competing priorities within tight deadlines. 
           I work best in roles where utilizing programming and analytics skills allows me to make a positive impact
           while using creative problem-solving to resolve issues and achieve goals.
@@ -86,4 +96,5 @@ const Works = () => {
   )
 }
 
-export default SectionWrapper(Works, "")
+const WrappedWorks = SectionWrapper(Works, "");
+export default WrappedWorks;

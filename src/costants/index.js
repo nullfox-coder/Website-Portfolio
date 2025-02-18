@@ -1,34 +1,24 @@
 import {
-    mobile,
     backend,
     language1,
     language2,
-    mobile2,
-    // creator,
-    blockchain,
-    web,
     javascript,
     typescript,
     html,
     css,
-    reactjs,
-    redux,
-    tailwind,
+    django,
+    pg,
+    playwright,
     nodejs,
     mongodb,
     git,
     figma,
-    docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
     photography,
-    mrs,
     global_terrorism,
-    threejs,
     javascript1,
-    streamlit,
+    grocery,
+    buildings,
+    pathfinder
   } from "../assets";
 
 
@@ -58,21 +48,13 @@ import {
       icon: language2,
     },
     {
-      title: "Web Developer",
-      icon: web,
-    },
-    {
       title: "Javascript Developer",
       icon: javascript1,
     },
     {
       title: "Backend Developer",
       icon: backend,
-    },
-    {
-      title: "Blockchain Developer",
-      icon: blockchain,
-    },
+    }
   
   ];
   
@@ -90,24 +72,24 @@ import {
       icon: javascript,
     },
     {
-      name: "React JS",
-      icon: reactjs,
-    },
-    {
-      name: "Tailwind CSS",
-      icon: tailwind,
+      name: "Django",
+      icon: django,
     },
     {
       name: "Node JS",
       icon: nodejs,
     },
     {
+      name: "PostgreSql",
+      icon: pg,
+    },
+    {
       name: "MongoDB",
       icon: mongodb,
     },
     {
-      name: "Three JS",
-      icon: threejs,
+      name: "TypeScript",
+      icon: typescript,
     },
     {
       name: "git",
@@ -118,34 +100,37 @@ import {
       icon: figma,
     },
     {
-      name: "streamlit",
-      icon: streamlit,
+      name: "playwright",
+      icon: playwright,
     },
   ];
   
   const experiences = [
     {
-      title: "Tech Intern",
-      company_name: "The Spaarks Foundation",
-      icon: starbucks,
+      title: "Backend Deveoper",
+      company_name: "Trixno",
       iconBg: "#383E56",
-      date: "July 2022 - August 2022",
+      date: "July 2024 - February 2025",
       points: [
-        "Created a hybrid model for stock price/performance prediction",
-        "Used numerical analysis of historical stock prices, and sentimental analysis of news headlines.",
+        "Designed and implemented 100+ robust APIs, optimized with Redis caching for performance. ",
+        "Led backend development for 1 project and contributed to 3 others, ensuring scalability and reliability.", 
+        "Conducted research to meet client demands, including integrating Meta APIs to develop a WhatsApp Business Solution Provider platform.",
+        "Developed scripts to scrape, generate, and automate data for website and testing purposes, streamlining processes.", 
+        "Integrated diverse third-party services: payment gateways, caching mechanisms, bulk SMS systems, and Meta APIs.", 
+        "Utilized modern tools and technologies: Django, Node.js, TypeScript, PostgreSQL, Docker, Git, Postman, ngrok, and cloud platforms (GCP, AWS).",
+        "Streamlined development processes with containerization and CI/CD pipelines, improving deployment efficiency." 
       ],
     },
     {
-      title: "Data Science Internship",
-      company_name: "Yoshops",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "June 2022 - August 2022",
+      title: "Software Trainee",
+      company_name: "Bosscoder",
+      // icon: bosscoder,
+      iconBg: "#383E56",
+      date: "Nov 2023 - May 2024",
       points: [
-        "Performed Exploratory Data Analysis on company order datasets.",
-        "Developed Predictive models for sales.",
-        "Presented information using the data visualization technique.",
-        "Proposed solutions and strategies for business challenges.",
+        "Mastered Data Structures and Algorithms, Backend Development, and Low-Level Design through a comprehensive 6-month training program.",  
+        "Solved more than 400 DSA problems consistently for 6 months and participated in various discussions over HLD.",
+        "Developed industry-level projects, integrating multiple frameworks to achieve robust solutions." 
       ],
     },
   ];
@@ -153,7 +138,7 @@ import {
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+        "lorem epsom dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       name: "Sara Lee",
       designation: "CFO",
       company: "Acme Co",
@@ -161,7 +146,7 @@ import {
     },
     {
       testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       name: "Chris Brown",
       designation: "COO",
       company: "DEF Corp",
@@ -200,27 +185,68 @@ import {
       source_code_link: "https://nullfox-coder.github.io/null_fox.github.io/index.html",
     },
     {
-      name: "Movie Recommender System",
+      name: "Grocery App",
       description:[
-        "With the help of TMDB dataset created a recommender system.",
-        "It provides top 5 recommendation based on the current movie search.",
+          "A grocery App just like blinkit, where user can select store , add items to cart, checkout and pay. The Algorithm is such that user will be only be able to order from the store which is near to his location.",
       ],
       tags: [
         {
-          name: "python",
+          name: "postgresql",
           color: "blue-text-gradient",
         },
         {
-          name: "streamlit",
+          name: "node.js",
           color: "green-text-gradient",
         },
         {
-          name: "jupyter",
+          name: "typescript",
           color: "pink-text-gradient",
         },
       ],
-      image: mrs,
-      source_code_link: "https://github.com/nullfox-coder",
+      image: grocery,
+      source_code_link: "https://grocery-web-ebon.vercel.app/",
+    },
+    {
+      name: "Real Estate Website",
+      description:
+        "Build a Real Estate website for seller, agent can list thier properties and buyer can search for properties based on different features/ratings of that property.",
+      tags: [
+        {
+          name: "postgresql",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Django",
+          color: "green-text-gradient",
+        },
+        {
+          name: "python",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: buildings,
+      source_code_link: "https://github.com/nullfox-coder/real-estate",
+    },
+    {
+      name: "Shortest Path Finder",
+      description:
+        "Applied Dijkstra’a shortest path algorithm to find the route which takes the shortest time to travel from source to destination in a grid where we can randomly generate traffic.",
+      tags: [
+        {
+          name: "React",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Javascript",
+          color: "green-text-gradient",
+        },
+        {
+          name: "CSS",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: pathfinder,
+      source_code_link: "https://github.com/nullfox-coder/Shortest-Path-Visualizer",
     },
     {
       name: "EDA on Global Terrorism",

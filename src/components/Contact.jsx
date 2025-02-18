@@ -21,20 +21,24 @@ const Contact = () => {
     setForm({...form, [name]: value })
   }
 
+  const serviceId = 'service_c82tfwi';
+  const templateId = 'template_1onwr6k';
+  const userId = 'hDjCPSyeOC5O-_BBs';
+
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true)
     emailjs.send(
-      service_al3vf4n,
-      template_1onwr6k,
+      serviceId,
+      templateId,
       {
         from_name:form.name,
         to_name:'Satyam',
         from_email: form.email,
-        to_email: 'satyak0330@gmail.com',
+        to_email: 'skushwaha.iitr@gmail.com',
         message:form.message,
       },
-      'hDjCPSyeOC5O-_BBs'
+      userId
     )
     .then(() => {
       setLoading(false)
@@ -55,7 +59,7 @@ const Contact = () => {
   }
 
   return (
-    <div className='xl:mt-12 flex xl:fex-row flex-col-reverse flex gap-10 overflow-hidden'>
+    <div className='xl:mt-12 flex xl:fex-row flex-col-reverse gap-10 overflow-hidden'>
       <motion.div>
       <motion.div 
         variants={slideIn('left','tween',0.2, 1)}
@@ -125,4 +129,5 @@ const Contact = () => {
   )
 }
 
-export default SectionWrapper(Contact,'contact')
+const WrappedContacts = SectionWrapper(Contact,'contact')
+export default WrappedContacts

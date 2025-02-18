@@ -20,12 +20,6 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
-
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
-
 import photography from "./photography.png";
 import mrs from "./mrs.png";
 import global_terrorism from "./global_terrorism.png";
@@ -35,6 +29,12 @@ import language2 from "./language2.png";
 import mobile2 from "./mobile2.png";
 import javascript1 from "./javascript1.png";
 import streamlit from "./streamlit.svg";
+import django from "./tech/django.png"
+import pg from "./tech/pg.png"
+import playwright from "./tech/playwright.png";
+import grocery from "./grocery.png";
+import buildings from "./buildings.jpg"
+import pathfinder from "./pathfinder.png"
 
 
 export {
@@ -59,10 +59,6 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
   blockchain,
   language1,
   language2,
@@ -72,4 +68,10 @@ export {
   mrs,
   photography,
   global_terrorism,
+  django,
+  pg,
+  playwright,
+  grocery,
+  buildings,
+  pathfinder
 };
