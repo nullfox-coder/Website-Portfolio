@@ -1,8 +1,7 @@
-import React,  {useState, useRef, Suspense} from 'react'
+import { useRef, Suspense} from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
-import { Points, PointMaterial, Preload, Sphere } from '@react-three/drei'
+import { Points, PointMaterial } from '@react-three/drei'
 import * as random from 'maath/random/dist/maath-random.esm'
-import { Group } from 'three'
 
 const Stars = (props) => {
   const ref = useRef();
@@ -18,8 +17,8 @@ const Stars = (props) => {
   })
 
   return (
-    <group rotation={[0,0,Math.PI /4]}>
-      <Points ref={ref} positions = {sphere} stride={3} frustumCulled {...props} >
+    <group>
+      <Points ref={ref} rotation={[0,0,Math.PI /4]} positions = {sphere} stride={3} frustumCulled {...props} >
         <PointMaterial 
             transparent
             color='#f272c8'
