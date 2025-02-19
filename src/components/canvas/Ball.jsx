@@ -36,6 +36,7 @@ const Ball = (props) => {
 const BallCanvas = ({icon}) => {
   return (
     <Canvas
+      dpr={[1, 2]}
       frameloop='demand'
       gl={{preserveDrawingBuffer:true}}
     >
